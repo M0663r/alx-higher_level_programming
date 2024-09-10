@@ -5,7 +5,7 @@ number = random.randint(-10000, 10000)
 
 print(f'Last digit of {number} is {number[-1]} and is', end=" ")
 if number[-1] == 0:
-    print("0"}
+    print("0")
 elif number[-1] > 5:
     print("greater than 5")
 elif number[-1] < 6 and number[-1] != 0:
