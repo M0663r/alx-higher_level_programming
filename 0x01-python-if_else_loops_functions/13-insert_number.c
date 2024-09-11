@@ -20,7 +20,7 @@ return (NULL);
 new_node->n = number;
 new_node->next = NULL;
 
-if (*head == NULL || (*head)->n >= number)  // Insert at the beginning
+if (*head == NULL || (*head)->n >= number)
 {
 new_node->next = *head;
 *head = new_node;
@@ -28,7 +28,7 @@ return (new_node);
 }
 
 current = *head;
-while (current != NULL && current->n < number)  // Traverse the list
+while (current != NULL && current->n < number)
 {
 prev = current;
 current = current->next;
