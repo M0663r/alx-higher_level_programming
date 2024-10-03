@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a class `Square` that represents a square with size validation.
+This module defines a class `Square` that represents a square. 
 """
 
 
