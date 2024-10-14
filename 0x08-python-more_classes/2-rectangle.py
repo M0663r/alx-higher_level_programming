@@ -6,7 +6,7 @@ for width and height, and public methods to calculate area and perimeter.
 
 
 class Rectangle:
-    """Defines a rectangle with width and height, and methods to compute area and perimeter."""
+    """Defines a rectangle with width and height."""
 
     def __init__(self, width=0, height=0):
         """Initializes the Rectangle with optional width and height."""
