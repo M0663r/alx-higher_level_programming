@@ -6,6 +6,7 @@ and print the rectangle using the character '#'.
 The class also provides __repr__ to recreate a new instance via eval().
 """
 
+
 class Rectangle:
     """Defines a rectangle with width and height, and methods to c."""
 
