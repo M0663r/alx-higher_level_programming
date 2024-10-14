@@ -17,11 +17,12 @@ def print_solution(board):
 def is_safe(board, row, col):
     """
     Checks if a queen can be placed on board[row][col].
-
+    
     Args:
+        board: The list where the index represents the row and the value at the index represents the column.
         row: The row index to check.
         col: The column index to check.
-
+    
     Returns:
         bool: True if it is safe to place the queen, False otherwise.
     """
@@ -37,7 +38,7 @@ def is_safe(board, row, col):
 def solve_nqueens(board, row, n):
     """
     Solves the N Queens problem using backtracking.
-
+    
     Args:
         board: The current state of the board.
         row: The current row to place a queen.
