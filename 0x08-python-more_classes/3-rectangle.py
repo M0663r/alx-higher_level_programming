@@ -78,5 +78,5 @@ class Rectangle:
 
     def __repr__(self):
         """Returns a string representation
-        of the rectangle instance for debugging purposes."""
-        return f"<Rectangle object at {hex(id(self))}>"
+        of the rectangle for debugging purposes."""
+        return f"Rectangle({self.__width}, {self.__height})"
