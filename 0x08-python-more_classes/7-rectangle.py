@@ -9,6 +9,7 @@ representation for printing and recreating the object.
 
 
 class Rectangle:
+"""A class that defines a rectangle by its width and height."""
     number_of_instances = 0
     print_symbol = "#"
 
