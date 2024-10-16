@@ -17,5 +17,5 @@ def add_integer(a, b=98):
     # Cast a and b to integers if they are floats
     a = int(a)
     b = int(b)
-    
+
     return a + b
