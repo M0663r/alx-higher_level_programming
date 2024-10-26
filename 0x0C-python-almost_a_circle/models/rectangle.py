@@ -92,15 +92,21 @@ class Rectangle(Base):
         """Returns a formatted string representation of the Rectangle."""
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
 
-    def update(self, *args):
-        """Assigns arguments to attributes in a specific order:
+    def update(self, *args, **kwargs):
+        """Assigns arguments to attributes in a specific order if *args is provided.
+        If *args is empty, assigns attributes using **kwargs.
         1st argument: id
         2nd argument: width
         3rd argument: height
         4th argument: x
         5th argument: y
         """
-        attributes = ['id', 'width', 'height', 'x', 'y']
-        for i, arg in enumerate(args):
-            if i < len(attributes):
-                setattr(self, attributes[i], arg)
+        if args:
+            attributes = ['id', 'width', 'height', 'x', 'y']
+            for i, arg in enumerate(args):
+                if i < len(attributes):
+                    setattr(self, attributes[i], arg)
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key):
+                    setattr(self, key, value)
